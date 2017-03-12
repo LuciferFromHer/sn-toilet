@@ -47,10 +47,10 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('watch', ['sass', 'scripts', 'browser-sync'], function() {
+gulp.task('watch', ['sass', 'scripts'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
-	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/*.php');
 });
 
 gulp.task('imagemin', function() {
@@ -62,7 +62,7 @@ gulp.task('imagemin', function() {
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function() {
 
 	var buildFiles = gulp.src([
-		'app/*.html',
+		'app/*.php',
 		'app/.htaccess'
 		]).pipe(gulp.dest('dist'));
 
