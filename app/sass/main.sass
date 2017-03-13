@@ -130,26 +130,51 @@ header
 			font-family: opensans-light
 		&:hover
 			background-color: #004058
+.button-tb-menu
+	display: none
+	background-image: url(../img/menu.svg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	width: 40px
+	height: 40px
+	margin-left: 20px
+	margin-top: 20px
+.tb-menu-black-bg
+	width: 100%
+	height: 100%
+	position: absolute
+	background-color: #000
+	opacity: 0
+	z-index: 10
+	display: none
+	top: 0
+	
 .tablet-menu
 	position: absolute
-	left: 0
+	left: -300px
+	display: none
+	z-index: 11
 	width: 300px
 	top: 0
 	height: 100%
 	background-color: #fff
 	text-align: left
 	.tb-profile
-		text-align: center
+		text-align: left
+		padding-left: 40px
 		background-color: #0078a4
 		padding-top: 30px
 		padding-bottom: 20px
+		a
+			text-decoration: none
 		.profile-img
-			width: 80px
-			height: 80px
+			width: 85px
+			height: 85px
 			border-radius: 5px
-			margin-top: 7px
+			margin-top: 0px
 			margin-bottom: 10px
-			box-shadow: 0 0 5px rgba(0,0,0,0.6)
+			box-shadow: 0 0 5px rgba(0,0,0,0.0)
 		.use-name
 			color: #fff
 			font-size: 20px
@@ -162,22 +187,33 @@ header
 	.nav
 		padding: 0
 		li
+			position: relative
+			&:nth-child(4)
+				margin-bottom: 20px
+			&:nth-child(4):after
+					content: "";
+					width: 200px
+					display: block
+					position: absolute
+					border-bottom: 1px solid #c0c0c0
+					left: 40px
+					bottom: -10px
 			a
 				color: #3d3d3d
 				display: block
 				width: 100%
 				text-decoration: none
-				padding: 3px 0 3px 80px
+				padding: 7px 0 7px 40px
 				font-family: opensans
-				font-size: 16px
+				font-size: 18px
 				&:hover
-					background-color: #0078a4
+					background-color: #dedede
 				span
 					width: 16px
 					display: block
 					float: left
 					height: 16px
-					margin-top: 6px
+					margin-top: 9px
 					margin-right: 15px
 				.ms
 					background: url(../img/message.svg) no-repeat
@@ -191,6 +227,7 @@ header
 					background: url(../img/settings.svg) no-repeat
 				.ex
 					background: url(../img/exit.svg) no-repeat
+				
 /*Страница Входа и регистрации*/
 .wrapper
 	 position: fixed
