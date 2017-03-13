@@ -18,7 +18,9 @@
 *:-ms-input-placeholder
 	color: #666
 	opacity: 1
-
+html,body
+	width: 100%
+    height: 100%
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -31,12 +33,20 @@ p
 body
 	font-size: 16px
 	min-width: 320px
-	position: relative
 	line-height: 1.75
 	font-family: $default-font
-	overflow: hidden
+.wrapper
+	 position: fixed
+	 left: 0
+	 top: 0
+	 right: 0
+	 bottom: 0
+	 display: flex
+	 align-items: center
+	 justify-content: center
 .login-block
-	margin-top: 50%
+	max-width: 370px
+	height: 320px
 	text-align: center
 	p 
 	 margin-top: 5px
@@ -48,14 +58,15 @@ body
 		color: #4f4f4f
 		width: 145px
 		line-height: 28px
-		b 
+		a 
 		 font-size: 36px
 		 font-family: opensans-extrabold
 		 color: #03bbff
+		 text-decoration: none
 input[type="text"]
 	border: none
 	border-bottom: 1px solid #8d8d8d
-	width: 330px
+	width: 300px
 	outline: none
 	color:#4f4f4f
 	font-size: 14px
@@ -68,7 +79,7 @@ input[type="text"]
 	
 	&:focus::-webkit-input-placeholder
 		color: #03bbff
-	&:nth-child(3)
+	&:nth-child(4)
 		margin-bottom: 30px
 
 input[type="submit"]
@@ -78,12 +89,15 @@ input[type="submit"]
 	font-family: opensans-light
 	color: #fff
 	font-size: 18px
+	outline: none
 	border-radius: 5px
 	padding: 3px 30px 3px 30px
-    
+input[type="submit"]:hover
+	background-color: #009cd6
 input[type="submit"]:last-child
 	margin-top: 5px
-	background-color:#06ff00
-
+	background-color: #06ff00
+input[type="submit"]:last-child:hover
+	background-color: #04a100
 
 @import "media" // Всегда в конце

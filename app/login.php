@@ -28,20 +28,17 @@
 </head>
 
 <body>
-	<div class="container">
-		<div class="row">
-			 <div class="col-lg-4 col-lg-offset-4 col-md-3 col-md-offset-4 col-sm-4 col-sm-offset-4">
-				<div class="login-block">
-					<div class="logo"><span>Social Network<br><b> Toilet</b></span></div>
-					<input type="text" placeholder="Логин" class="input-login">
-					<input type="text" placeholder="Пароль" class="input-login"><br>
-					<input type="submit" value="Вход">
-					<p>или</p>
-					<input type="submit" value="Регистрация">
-				</div>
-			</div>
+	<div class="wrapper">
+		<div class="login-block">
+			<div class="logo"><span>Social Network<br><a href="#">Toilet</a></span></div>
+			<input type="text" placeholder="Логин" class="input-login"><br>
+			<input type="text" placeholder="Пароль" class="input-login"><br>
+			<input type="submit" value="Вход">
+			<p>или</p>
+			<input type="submit" value="Регистрация">
 		</div>
 	</div>
+	
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
