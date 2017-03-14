@@ -19,7 +19,7 @@
 		<div class="header-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-2"><h1 class="logo"><a href="">Toilet</a></h1></div>
+					<div class="col-lg-2"><h1 class="logo"><a href="">Kabinka</a></h1></div>
 				</div>
 					<div class="main-header">
 									<div class="col-lg-4 col-md-5 col-sm-6">

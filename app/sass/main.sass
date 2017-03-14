@@ -294,6 +294,9 @@ header
 	margin-right: 16px
 	float: right
 	cursor: pointer
+.dialog
+	.find
+		margin-right: 30px
 .find-inpt
 	border: 0
 	display: none
@@ -405,6 +408,199 @@ header
 .messages
 	height: 580px
 	box-shadow: 0 0 1px rgba(0,0,0,0.54);
+	position: relative
+	.m-list
+		padding: 0
+		margin: 0
+		height: 532px
+		overflow-y: scroll
+	.m-list::-webkit-scrollbar
+		width: 0
+	.m-list
+		-ms-overflow-style: none
+	.m-list 
+		overflow: -moz-scrollbars-none
+		li
+			width: 100%
+			height: 80px
+			position: relative
+			a
+				padding-top: 14px
+				padding-bottom: 13px
+				display: block
+				width: 100%
+				height: 80px
+				padding-left: 15px
+				text-decoration: none
+				position: relative
+				transition: 0.1s all
+				&:after
+					content: "";
+					position: absolute
+					bottom: 0
+					width: 100%
+					left: 0
+					display: block
+					border-bottom: 1px solid #c0c0c0
+				&:hover
+					background-color: #e2f7ff
+					.ind
+						border: 2px solid #e2f7ff
+					.ms-del
+						display: block
+				img 
+					width: 50px
+					height: 50px
+					border-radius: 5px
+					box-shadow: 0 0 1px rgba(0,0,0,0.54);
+					float: left
+					margin-right: 15px
+				.ind
+					width: 12px
+					height: 12px
+					border: 2px solid #fff
+					transition: 0.1s all
+					position: absolute
+					border-radius: 50%
+					left: 58px
+					top: 56px
+				.online
+					background-color: #00ff1e
+				.offline
+					background-color: #c0c0c0
+				.use-name
+					color: #000
+					font-family: opensans
+					font-size: 14px
+					margin-top: -6px
+					float: left
+				.group-name
+					color: #000
+					font-family: opensans
+					font-size: 14px
+					margin-top: -6px
+					position: relative
+					float: left
+					margin-right: 10px
+					&:after
+						content: "";
+						width: 2px
+						height: 2px
+						border-radius: 50%
+						right: -7px
+						top: 12px
+						display: block
+						position: absolute
+						background-color: #777777
+				.g-members
+					font-size: 11px
+					font-family: opensans-light
+					color: #000
+					margin-top: -2px
+				.time
+					font-size: 12px
+					font-family: opensans-light
+					position: absolute
+					right: 25px
+					color: #000
+					top: 10px
+				.ms-del
+					background-image: url(../img/close-black.svg)
+					background-size: cover
+					display: block
+					width: 8px
+					height: 8px
+					top: 16px
+					position: absolute
+					right: 10px
+					display: none
+				.last-ms
+					position: absolute
+					left: 80px
+					top: 35px
+					img
+						width: 30px
+						height: 30px
+						margin-right: 5px
+					.message
+						color: #727272
+						font-size: 13px
+						font-family: opensans
+						line-height: 28px
+						margin-left: 0px
+						float: left
+/* Окно диалога*/
+
+.dialog
+	height: 580px
+	box-shadow: 0 0 1px rgba(0,0,0,0.54);
+	position: relative
+	.f-head
+		height: 55px
+		.back-block
+			width: 50px
+			position: absolute
+			padding-left: 10px
+			padding-top: 18px
+			height: 55px
+			margin-left: -15px
+			float: left
+			margin-top: -7px
+			cursor: pointer
+			&:hover
+				background: linear-gradient(to right, #007caa, $main-color);
+			.back
+				background-image: url(../img/left-arrow-angle.svg);
+				width: 18px
+				background-size: cover
+				height: 18px
+		p
+			margin-top: 4px
+			font-size: 17px
+		.use-img
+			position: relative
+			margin-left: 25px
+			img
+				width: 40px
+				height: 40px
+				margin-top: 1px
+				border-radius: 5px
+				box-shadow: 0 0 1px rgba(0,0,0,0.54);
+				float: left
+				margin-right: 10px
+			.ind
+					width: 10px
+					height: 10px
+					border: 2px solid #00baff
+					transition: 0.1s all
+					position: absolute
+					border-radius: 50%
+					left: 35px
+					top: 34px
+			.online
+					background-color: #00ff1e
+			.offline
+					background-color: #c0c0c0
+	.find
+		margin-top: 13px
+	.find-inpt
+		margin-top: 5px
+	.close
+		margin-top: 13px
+	.dots
+		position: absolute
+		width: 4px
+		display: block
+		height: 18px
+		right: 12px
+		top: 19px
+		cursor: pointer
+		.dot
+			width: 4px
+			height: 4px
+			background-color: #fff
+			border-radius: 2px
+			margin-bottom: 3px
 	.m-list
 		padding: 0
 		margin: 0

@@ -62,6 +62,28 @@ $(function() {
 			findInptOn = 0;
 	});
 	
+	$(".dialog .find").on("click", function(){
+			$(".dialog .find-inpt").css("display","block");
+			$(".dialog .close").css("display","block");
+			$(".dialog .find-inpt").animate({width: "200px"},100);
+			$(".dialog .find").animate({marginRight: "-25px"},100);
+			$(".dialog .dots").css("display","none");
+			$(".dialog .find").css("backgroundImage","url(img/search-active.svg)");
+			findInptOn = 1;
+	});
+	$(".dialog .close, .friends .find").on("click",function closeMesInput(){
+		setTimeout(function(){
+				$(".dialog .dots").css("display","block");
+				$(".dialog .find-inpt").css("display","none");
+				$(".dialog .close").css("display","none");
+			},100);
+			$(".dialog .find-inpt").val("");
+			$(".dialog .find-inpt").animate({width: "0px"},100);
+			$(".dialog .find").animate({marginRight: "30px"},100);
+			$(".dialog .find").css("backgroundImage","");
+			findInptOn = 0;
+	});
+	
 	$(".friends .find").on("click", function(){
 			$(".friends .find-inpt").css("display","block");
 			$(".friends .close").css("display","block");
@@ -70,7 +92,7 @@ $(function() {
 			$(".friends .find").css("backgroundImage","url(img/search-active.svg)");
 			findInptOn = 1;
 	});
-	$(".friends .close, .messages .find").on("click",function closeMesInput(){
+	$(".friends .close, .messages .find, .dialog .find").on("click",function closeMesInput(){
 		setTimeout(function(){
 				$(".friends .find-inpt").css("display","none");
 				$(".friends .close").css("display","none");
