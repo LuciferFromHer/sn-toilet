@@ -1,5 +1,6 @@
 <header>
 	<div class="button-tb-menu" id="button-tb-menu"></div>
+	<div class="tb-menu-page">Сообщения</div>
 	<div class="tb-menu-black-bg"></div>
 		<div class="header-block">
 			<div class="container">
