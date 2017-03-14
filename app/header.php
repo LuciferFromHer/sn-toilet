@@ -1,7 +1,21 @@
+
 <header>
-	<div class="button-tb-menu" id="button-tb-menu"></div>
-	<div class="tb-menu-page">Сообщения</div>
 	<div class="tb-menu-black-bg"></div>
+	<div class="container">
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="tb-header">
+					<div class="button-tb-menu" id="button-tb-menu"></div>
+					<div class="tb-menu-page"><p>Сообщения</p> 
+						<div class="close"></div>
+							<input type="text" class="find-inpt" id="message-search">
+							<div class="find"></div>
+							<div class="plus"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 		<div class="header-block">
 			<div class="container">
 				<div class="row">

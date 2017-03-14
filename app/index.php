@@ -31,6 +31,146 @@
 	<?php 
 		include("header.php");
 	?>
+	<div class="messages-block">
+		<div class="container">
+			<div class="row">
+				<div class="friends-block">
+					<div class="col-lg-5 col-md-5">
+						<div class="friends">
+							<div class="f-head">
+								<p>Друзья</p>
+								<div class="close"></div>
+								<input type="text" class="find-inpt" id="message-search">
+								<div class="find"></div>
+							</div>
+							<ul class="f-list">
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-7 col-sm-12">
+					<div class="messages">
+						<div class="f-head">
+							<p>Сообщения</p>
+							<div class="close"></div>
+							<input type="text" class="find-inpt" id="message-search">
+							<div class="find"></div>
+							<div class="plus"></div>
+						</div>
+						<ul class="m-list">
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<!-- Пример ниже для диалога в кабинке -->
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="group-name">Пролетариат</div><div class="g-members">312 участников</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+							<li><a href="#">
+							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind offline"></div><div class="use-name">Себастьян Гончаров</div><span class="time">23:30</span><span class="ms-del"></span>
+							<div class="last-ms">
+								<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="">
+								<div class="message">Привет петя</div>
+							</div>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>

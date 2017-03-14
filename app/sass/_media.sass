@@ -7,23 +7,50 @@
 @media only screen and (max-width : 1200px)
 	/**/
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 991px)
 	/**/
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+	.friends-block
+		display: none;
+	.tablet-menu
+		width: 260px
+	.container
+		padding-left: 0
+		width: 100%
+	.col-lg-7, .col-md-7
+		padding: 0
+	.messages-block
+		margin-top: 10px
+	.messages
+		box-shadow: none
 	.header-block
 		display: none
 	.button-tb-menu
 		display: block
+		margin-left: 10px
 	.tb-menu-page
 		display: block
+		left: 52px
+		right: -5px
+	.f-head
+		display: none
+	body
+		.messages
+			height: 100%
+			.m-list
+				height: 100%
+				width: 100%
+				margin-left: 14px
+				position: fixed
+	.messages
+		.m-list
+			li
+				a
+					.ind
+						top: 55px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-	.tablet-menu
-		width: 260px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -44,12 +71,13 @@
 
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 769px)
+@media only screen and (min-width : 992px)
 	/**/
 	#tablet-menu
 		display: none!important;
 	.tb-menu-black-bg
 		display: none!important;
+	
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
