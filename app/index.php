@@ -171,6 +171,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.min.js" defer></script>
 </body>
 </html>

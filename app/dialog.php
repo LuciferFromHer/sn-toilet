@@ -82,6 +82,13 @@
 						<ul class="m-list">
 							
 						</ul>
+						<div class="send-message-block">
+							<div class="send-inpt" id="send-inpt"contenteditable="true" tabindex="0"></div>
+							<div class="send-block"><button class="send-butt"></button></div>
+							<div class="send-inpt-placeholder" id="send-inpt-placeholder">Написать сообщение...</div>
+							<div class="attach"></div>
+							<div class="smiles"></div>
+						</div>
 					</div>
 				</div>
 			</div>

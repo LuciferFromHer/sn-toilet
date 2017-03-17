@@ -18,12 +18,12 @@ var gulp           = require('gulp'),
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/js/upturn.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'))
-	.pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('browser-sync', function() {

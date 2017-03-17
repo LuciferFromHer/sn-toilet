@@ -64,14 +64,34 @@ $(function() {
 	
 	$(".dialog .find").on("click", function(){
 			$(".dialog .find-inpt").css("display","block");
-			$(".dialog .close").css("display","block");
-			$(".dialog .find-inpt").animate({width: "200px"},100);
-			$(".dialog .find").animate({marginRight: "-25px"},100);
 			$(".dialog .dots").css("display","none");
+			$(".dialog .close").css("display","block");
+			var start = Date.now(); // сохранить время начала
+
+			var timer = setInterval(function() {
+			  // вычислить сколько времени прошло с начала анимации
+			  var timePassed = Date.now() - start;
+
+			  if (timePassed >= 2000) {
+				clearInterval(timer); // конец через 2 секунды
+				return;
+			  }
+
+			  // рисует состояние анимации, соответствующее времени timePassed
+			  draw(timePassed);
+
+			}, 20);
+
+			// в то время как timePassed идёт от 0 до 2000
+			// left принимает значения от 0 до 400px
+			function draw(timePassed) {
+			 document.getElementById("message-search").style.width = timePassed / 10 + 'px';
+			}
+			$(".dialog .find").animate({marginRight: "-25px"},100);
 			$(".dialog .find").css("backgroundImage","url(img/search-active.svg)");
 			findInptOn = 1;
 	});
-	$(".dialog .close, .friends .find").on("click",function closeMesInput(){
+	$(".dialog .close, .friends .find").on("click",function(){
 		setTimeout(function(){
 				$(".dialog .dots").css("display","block");
 				$(".dialog .find-inpt").css("display","none");
@@ -139,7 +159,28 @@ $(function() {
 			$(".tb-menu-page .find-inpt").val("");
 			$(".tb-menu-page .find-inpt").animate({width: "0px"},100);
 			$(".tb-menu-page .find").animate({marginRight: "16px"},100);
-			$(".tb-menu-page .find").css("backgroundImage","");
+			$(".tb-menu-page .find").css("background-image","");
 			findInptOn = 0;
 	});
+	//
+	getObj("#send-inpt").onfocus = function(){
+		getObj("#send-inpt-placeholder").style.color = "#c0c0c0";
+	};
+	getObj("#send-inpt").onblur = function(){
+		getObj("#send-inpt-placeholder").style.color = "";
+	};
+	getObj("#send-inpt-placeholder").onclick = function(){
+		getObj("#send-inpt").focus();
+	};
+	getObj("#send-inpt").onkeyup = function(){
+		var sendInptLength = getObj("#send-inpt").innerHTML.length;
+		if(sendInptLength == 0){
+			getDisplay("#send-inpt-placeholder","block");
+		}else{
+			getDisplay("#send-inpt-placeholder","none");
+		}
+	};
+	getObj("#send-inpt").onkeypress = function(){
+			getDisplay("#send-inpt-placeholder","none");
+	};
 });
