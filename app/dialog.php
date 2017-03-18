@@ -39,9 +39,9 @@
 						<div class="friends">
 							<div class="f-head">
 								<p>Друзья</p>
-								<div class="close"></div>
-								<input type="text" class="find-inpt" id="message-search">
-								<div class="find"></div>
+								<div class="close fr-close"></div>
+								<input type="text" class="find-inpt fr-find-inpt" id="message-search">
+								<div class="find fr-find"></div>
 							</div>
 							<ul class="f-list">
 								<li><a href="#"><img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt=""><div class="ind online"></div><div class="use-name">Себастьян Гончаров</div></a><span class="favor"></span></li>
@@ -70,14 +70,14 @@
 								</div>
 								<p>Даниил Крамсков</p>
 							</a>
-							<div class="dots">
+							<div class="dots dg-dots">
 								<div class="dot"></div>
 								<div class="dot"></div>
 								<div class="dot"></div>
 							</div>
-							<div class="close"></div>
-							<input type="text" class="find-inpt" id="message-search">
-							<div class="find"></div>
+							<div class="close dg-close"></div>
+							<input type="text" class="find-inpt dg-find-inpt">
+							<div class="find dg-find"></div>
 						</div>
 						<ul class="m-list">
 							

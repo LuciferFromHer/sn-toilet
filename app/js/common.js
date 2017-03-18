@@ -61,48 +61,38 @@ $(function() {
 			$(".messages .find").css("backgroundImage","");
 			findInptOn = 0;
 	});
-	
-	$(".dialog .find").on("click", function(){
-			$(".dialog .find-inpt").css("display","block");
-			$(".dialog .dots").css("display","none");
-			$(".dialog .close").css("display","block");
-			var start = Date.now(); // сохранить время начала
-
-			var timer = setInterval(function() {
-			  // вычислить сколько времени прошло с начала анимации
-			  var timePassed = Date.now() - start;
-
-			  if (timePassed >= 2000) {
-				clearInterval(timer); // конец через 2 секунды
-				return;
-			  }
-
-			  // рисует состояние анимации, соответствующее времени timePassed
-			  draw(timePassed);
-
-			}, 20);
-
-			// в то время как timePassed идёт от 0 до 2000
-			// left принимает значения от 0 до 400px
-			function draw(timePassed) {
-			 document.getElementById("message-search").style.width = timePassed / 10 + 'px';
+	getObj(".dg-find")[0].onclick = function(){
+			if(getObj(".dg-find-inpt")[0].style.display == "block"){
+				animateWidth();
+			}else{
+				animateWidth("dg-find-inpt",0,200,100);
 			}
-			$(".dialog .find").animate({marginRight: "-25px"},100);
-			$(".dialog .find").css("backgroundImage","url(img/search-active.svg)");
+			if(getObj(".dg-find-inpt")[0].style.display == "block"){
+				animateMargin();
+			}else{
+				animateMargin("dg-find",30,-22,100,"right");
+			}
+			getObj(".dg-find-inpt")[0].style.display = "block";
+			getObj(".dg-dots")[0].style.display = "none";
+			getObj(".dg-close")[0].style.display = "block";
+			getObj(".dg-find")[0].style.backgroundImage = "url(img/search-active.svg)";
 			findInptOn = 1;
-	});
-	$(".dialog .close, .friends .find").on("click",function(){
-		setTimeout(function(){
-				$(".dialog .dots").css("display","block");
-				$(".dialog .find-inpt").css("display","none");
-				$(".dialog .close").css("display","none");
-			},100);
-			$(".dialog .find-inpt").val("");
-			$(".dialog .find-inpt").animate({width: "0px"},100);
-			$(".dialog .find").animate({marginRight: "30px"},100);
-			$(".dialog .find").css("backgroundImage","");
-			findInptOn = 0;
-	});
+	};
+	
+	document.onclick = function(e){
+		if(e.target.className.split(" ")[1] == "dg-close" || e.target.className.split(" ")[1] == "fr-find"){
+				setTimeout(function(){ 
+					getObj(".dg-dots")[0].style.display = "block";
+					getObj(".dg-find-inpt")[0].style.display = "none";
+					getObj(".dg-close")[0].style.display = "none";
+				},100);
+				getObj(".dg-find-inpt")[0].value = "";
+				animateWidth("dg-find-inpt",200,0,100);
+				animateMargin("dg-find",-23,26,100,"right");
+				getObj(".dg-find")[0].style.backgroundImage = "url(img/search.svg)";
+				findInptOn = 0;
+		}
+	};
 	
 	$(".friends .find").on("click", function(){
 			$(".friends .find-inpt").css("display","block");
@@ -173,8 +163,9 @@ $(function() {
 		getObj("#send-inpt").focus();
 	};
 	getObj("#send-inpt").onkeyup = function(){
-		var sendInptLength = getObj("#send-inpt").innerHTML.length;
-		if(sendInptLength == 0){
+		var sendInptValue = getObj("#send-inpt").innerHTML;
+		if( sendInptValue.length == 0 || sendInptValue == "<div><br></div>"){
+			getObj("#send-inpt").innerHTML = "";
 			getDisplay("#send-inpt-placeholder","block");
 		}else{
 			getDisplay("#send-inpt-placeholder","none");
