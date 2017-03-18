@@ -294,6 +294,9 @@ header
 	margin-right: 16px
 	float: right
 	cursor: pointer
+.dialog
+	.find
+		margin-right: 30px
 .find-inpt
 	border: 0
 	display: none
@@ -405,6 +408,7 @@ header
 .messages
 	height: 580px
 	box-shadow: 0 0 1px rgba(0,0,0,0.54);
+	position: relative
 	.m-list
 		padding: 0
 		margin: 0
@@ -419,6 +423,362 @@ header
 		li
 			width: 100%
 			height: 80px
+			position: relative
+			a
+				padding-top: 14px
+				padding-bottom: 13px
+				display: block
+				width: 100%
+				height: 80px
+				padding-left: 15px
+				text-decoration: none
+				position: relative
+				transition: 0.1s all
+				&:after
+					content: "";
+					position: absolute
+					bottom: 0
+					width: 100%
+					left: 0
+					display: block
+					border-bottom: 1px solid #c0c0c0
+				&:hover
+					background-color: #e2f7ff
+					.ind
+						border: 2px solid #e2f7ff
+					.ms-del
+						display: block
+				img 
+					width: 50px
+					height: 50px
+					border-radius: 5px
+					box-shadow: 0 0 1px rgba(0,0,0,0.54);
+					float: left
+					margin-right: 15px
+				.ind
+					width: 12px
+					height: 12px
+					border: 2px solid #fff
+					transition: 0.1s all
+					position: absolute
+					border-radius: 50%
+					left: 58px
+					top: 56px
+				.online
+					background-color: #00ff1e
+				.offline
+					background-color: #c0c0c0
+				.use-name
+					color: #000
+					font-family: opensans
+					font-size: 14px
+					margin-top: -6px
+					float: left
+				.group-name
+					color: #000
+					font-family: opensans
+					font-size: 14px
+					margin-top: -6px
+					position: relative
+					float: left
+					margin-right: 10px
+					&:after
+						content: "";
+						width: 2px
+						height: 2px
+						border-radius: 50%
+						right: -7px
+						top: 12px
+						display: block
+						position: absolute
+						background-color: #777777
+				.g-members
+					font-size: 11px
+					font-family: opensans-light
+					color: #000
+					margin-top: -2px
+				.time
+					font-size: 12px
+					font-family: opensans-light
+					position: absolute
+					right: 25px
+					color: #000
+					top: 10px
+				.ms-del
+					background-image: url(../img/close-black.svg)
+					background-size: cover
+					display: block
+					width: 8px
+					height: 8px
+					top: 16px
+					position: absolute
+					right: 10px
+					display: none
+				.last-ms
+					position: absolute
+					left: 80px
+					top: 35px
+					img
+						width: 30px
+						height: 30px
+						margin-right: 5px
+					.message
+						color: #727272
+						font-size: 13px
+						font-family: opensans
+						line-height: 28px
+						margin-left: 0px
+						float: left
+/* Окно диалога*/
+
+.dialog
+	height: 580px
+	box-shadow: 0 0 1px rgba(0,0,0,0.54);
+	position: relative
+	.f-head
+		height: 55px
+		.back-block
+			width: 50px
+			position: absolute
+			padding-left: 10px
+			padding-top: 18px
+			height: 55px
+			margin-left: -15px
+			float: left
+			margin-top: -7px
+			cursor: pointer
+			&:hover
+				background: linear-gradient(to right, #007caa, $main-color);
+			.back
+				background-image: url(../img/left-arrow-angle.svg);
+				width: 18px
+				background-size: cover
+				height: 18px
+		p
+			margin-top: 4px
+			font-size: 17px
+		.use-img
+			position: relative
+			margin-left: 25px
+			img
+				width: 40px
+				height: 40px
+				margin-top: 1px
+				border-radius: 5px
+				box-shadow: 0 0 1px rgba(0,0,0,0.54);
+				float: left
+				margin-right: 10px
+			.ind
+					width: 10px
+					height: 10px
+					border: 2px solid #00baff
+					transition: 0.1s all
+					position: absolute
+					border-radius: 50%
+					left: 35px
+					top: 34px
+			.online
+					background-color: #00ff1e
+			.offline
+					background-color: #c0c0c0
+	.find
+		margin-top: 13px
+	.find-inpt
+		margin-top: 5px
+	.close
+		margin-top: 13px
+	.dots
+		position: absolute
+		width: 4px
+		display: block
+		height: 18px
+		right: 12px
+		top: 19px
+		cursor: pointer
+		.dot
+			width: 4px
+			height: 4px
+			background-color: #fff
+			border-radius: 2px
+			margin-bottom: 3px
+	.send-message-block
+		background-color: #eee
+		width: 100%
+		position: absolute
+		bottom: 0
+		padding-left: 12px
+		padding-top: 10px
+		border-top: 1px solid #c0c0c0
+		padding-bottom: 10px
+		.send-inpt
+			background-color: #fff
+			resize: none
+			width: 80%
+			word-wrap: break-word
+			z-index: 10
+			display: inline-block
+			max-height: 200px
+			overflow-x: hidden
+			overflow-y: auto
+			padding-bottom: 13px
+			padding-top: 13px
+			padding-right: 5px
+			min-height: 40px
+			font-size: 14px
+			line-height: 15px
+			outline: none
+			position: relative
+			border-radius: 5px
+			border: none
+			float: left
+			z-index: 1
+			padding-left: 10px
+			box-shadow: 0 0 2px rgba(0,0,0,0.54);
+		.send-inpt-placeholder
+			position: absolute
+			user-select: none
+			top: 17px
+			left: 22px
+			cursor: text
+			z-index: 3
+			color: #717171
+    		pointer-events: none
+		.send-block
+			float: left
+			margin-left: 10px
+			width: 25px
+			.send-butt
+				border: none
+				background-color: transparent
+				background-image: url(../img/send.svg)
+				width: 21px
+				height: 21px
+				background-repeat: no-repeat
+				background-size: cover
+				display: block
+				cursor: pointer
+				position: absolute
+				transition: all 0.1s
+				bottom: 20px
+				&:hover
+					background-image: url(../img/send-active.svg)
+		.attach
+			width: 17px
+			height: 17px
+			position: absolute
+			right: 33px
+			transition: all 0.1s
+			bottom: 21px
+			background-repeat: no-repeat
+			background-size: cover
+			background-image: url("../img/clip.svg")
+			cursor: pointer
+			&:hover
+				background-image: url("../img/clip-active.svg")
+		.smiles
+			width: 17px
+			transition: all 0.1s
+			cursor: pointer
+			height: 17px
+			position: absolute
+			right: 10px
+			bottom: 21px
+			background-repeat: no-repeat
+			background-size: cover
+			background-image: url("../img/smile.svg")
+			&:hover
+				background-image: url("../img/smile-active.svg")
+	.ms-list-alignment	
+		padding-top: 10px;
+		height: 465px
+		overflow-x: hidden
+		overflow-y: scroll
+		padding-left: 5px
+		padding-right: 5px
+	.ms-list-alignment::-webkit-scrollbar
+			width: 0
+	.ms-list-alignment
+		-ms-overflow-style: none
+	.ms-list-alignment 
+		overflow: -moz-scrollbars-none
+		.ms-list
+			height: auto
+			width: 100%
+			padding: 0
+			margin: 0
+			text-align: left
+			display: flex
+			flex-direction: column
+			padding-bottom: 10px
+			.dg-message
+				width: 100%
+				height: auto
+				padding-top: 5px
+				padding-bottom: 10px
+				padding-left: 15px
+				padding-right: 15px
+				.user-info
+					height: auto
+					.user-name
+						font-size: 14px
+						font-family: opensans-bold
+						color: #000
+						cursor: pointer
+						float: left
+						position: relative
+						&:hover
+							color: $main-color
+						&:after
+							content: "";
+							width: 2px
+							height: 2px
+							display: block
+							float: right
+							border-radius: 50%
+							margin-top: 12px
+							margin-left: 5px
+							background-color: #4f4f4f
+					.ms-time
+						font-size: 11px
+						font-family: opensans-light
+						color: #000
+						margin-top: 3px
+						margin-left: 5px
+						float: left
+					.user-img
+						margin-top: 5px
+						width: 55px
+						margin-right: 10px
+						border-radius: 5px
+						float: left
+						img
+							box-shadow: 0 0 1px rgba(0,0,0,0.54);
+							width: 55px
+							height: 55px
+							border-radius: 5px
+				.ms-text-block
+					width: 100%px
+					.ms-text
+						word-wrap: break-word
+						font-size: 13px
+						font-family: opensans
+						color: #000
+						padding-top: 25px
+						margin: 0px 0px 0px 65px
+
+	.m-list
+		padding: 0
+		margin: 0
+		overflow-y: scroll
+	.m-list::-webkit-scrollbar
+		width: 0
+	.m-list
+		-ms-overflow-style: none
+	.m-list 
+		overflow: -moz-scrollbars-none
+		li
+			width: 100%
+			height: 100%
 			position: relative
 			a
 				padding-top: 14px
@@ -590,5 +950,286 @@ input[type="submit"]:last-child
 	background-color: #06ff00
 input[type="submit"]:last-child:hover
 	background-color: #04a100
+
+.container
+	position: relative
+	.row
+		.block
+			.block-head
+				position: relative
+				height: 55px
+				background-color: #00BCFE
+				padding: 11px 0 0 15px
+				span
+					font:
+						size: 18px
+						family: roboto-bold
+					letter-spacing: 1px
+					color: #fff
+			.block-menu
+				display: flex
+				align-items: center
+				justify-content: space-between
+				border: 1px solid #D1D1D1
+				padding-right: 20px
+				ul
+					font-size: 12px
+					list-style: none
+					margin: 0
+					padding: 0
+					display: inline-flex
+					li
+						display: inline-block
+						cursor: pointer
+						font:
+							family: opensans-light
+							size: 12px
+						color: #0E1211
+						padding: 6px 20px
+						border: 1px solid #D1D1D1
+						border-top: 0
+						border-left: 1px
+						border-bottom: 0
+						position: relative
+						&:hover:after
+							height: 4px
+							content: ""
+							background-color: #00BCFE
+							display: block
+							width: 100%
+							left: 0
+							bottom: 0
+							position: absolute
+				img
+					cursor: pointer
+			.block-content
+				height: 496px
+				width: 100%
+				display: block
+				overflow-y: scroll
+				border: 1px solid #D1D1D1
+				border-top: 0
+			.block-content::-webkit-scrollbar
+				width: 0
+			.block-content
+				-ms-overflow-style: none
+			.block-content
+				overflow: -moz-scrollbars-none
+				.block-name-list
+					margin: 0
+					height: 85px
+					padding: 10px 20px
+					position: relative
+					&:after
+						content: ""
+						position: absolute
+						bottom: 0
+						width: 92.5%
+						display: block
+						border-bottom: 1px solid #c0c0c0
+					&:hover
+						background-color: #c9f0ff
+					.block-star
+						background-image: url('../img/star.svg')
+						background-repeat: no-repeat
+						width: 20px
+						height: 20px
+						background-size: cover
+						display: block
+						position: absolute
+						right: 45px
+						cursor: pointer
+						top: 35px
+						&:hover
+							background-image: url('../img/star-favor.svg')
+					.block-face
+						width: 65px
+						height: 65px
+						position: absolute
+						display: inline-block
+					.block-info
+						margin-left: 77px
+						.block-name
+							display: block
+							font:
+								size: 14px
+								family: opensans-regular
+						.block-groups-info-count
+							display: block
+							font:
+								size: 12px
+								family: opensans-light
+						.block-friends-name
+							margin-top: 18px
+					.dots
+						position: absolute
+						width: 4px
+						height: 18px
+						right: 32px
+						cursor: pointer
+						top: 37px
+						.dot
+							width: 4px
+							height: 4px
+							background-color: #000
+							border-radius: 2px
+							margin-bottom: 3px
+		.block-friends-search
+			position: relative
+			padding: 0
+			height: 390px
+			.block-friends-search-header
+			.block-friends-find
+				border: 1px solid #D1D1D1
+				height: 100%
+				padding-left: 18px
+				padding-top: 10px
+				.friends-search
+					position: relative
+					.div-set
+						border: 1px solid #D1D1D1
+						display: inline-block
+						height: 27px
+						position: relative
+						cursor: pointer
+						span
+							position: relative
+							bottom: 3px
+							font:
+								size: 12px
+								family: opensans-light
+								color: #828282
+							&:after
+								display: block
+								content: ""
+								position: absolute
+								top: 5px
+								width: 6px
+								height: 6px
+								border-top: 1px solid #828282
+								border-right: 1px solid #828282
+								transform: rotate(135deg)
+					.input-country,.input-town
+						width: 240px
+						padding-left: 7px
+						span
+							&:after
+								left: 218px
+					.input-sex
+						width: 148px
+						padding-left: 7px
+						display: block
+						span
+							&:after
+								left: 125px
+					.block-list-search
+						z-index: 3434
+						border: 1px solid #D1D1D1
+						position: absolute
+						background-color: #fff
+						display: none
+						overflow-y: scroll
+						ul
+							margin: 0
+							list-style: none
+							padding: 0
+							font:
+								family: opensans-light
+								size: 12px
+							color: #000
+							cursor: pointer
+					.list-sex
+						position: absolute
+						top: 57px
+						overflow: hidden
+						width: 148px
+						li
+							padding: 0 7px
+							&:hover
+								background-color: #c9f0ff
+					.list-country, .list-town
+						position: absolute
+						top: 57px
+						height: 100px
+						width: 240px
+						li
+							padding: 0 7px
+							&:hover
+								background-color: #c9f0ff
+
+					.head-search-title
+						font:
+							family: opensans-bold
+							size: 18px
+						color: #5D5D5D
+						display: block
+				.block-friends-age
+					position: relative
+					div
+						width: 60px
+						span
+							left: 8px
+							&:after
+								left: 35px
+
+					.input-age-from
+							margin-right: 24px
+							&:after
+								content: ""
+								position: absolute
+								background-color: #D1D1D1
+								width: 28px
+								bottom: 13px
+								left: 59px
+								height: 1px
+					.input-age-list
+						width: 60px
+						height: 90px
+						top: 56px
+						z-index: 234
+						ul
+							height: 90px
+							li
+								padding-left: 2px
+								&:hover
+									background-color: #c9f0ff
+					.from-age
+						left: 0
+						display: none
+					.to-age
+						left: 88px
+						display: none
+		.block-empty
+			background-color: #000
+			height: 200px
+			position: relative
+
+		.footer
+			margin-bottom: 25px
+			.cont-foot
+				.info-foot
+					display: block
+					text-align: center
+				.subtitle-toilet
+					margin-top: 20px
+					font-family: opensans-extrabold
+					color: #676767
+					font-size: 18px
+				.title-toilet
+					font-family: opensans-extrabold
+					font-size: 36px
+					color: #00BCFE
+					line-height: 40px
+					padding-bottom: 10px
+				ul
+					margin: 0
+					li
+						display: inline-block
+						padding: 0 12px
+						font-family: opensans-light
+						font-size: 12px
+						a
+							color: #000
+							cursor: pointer
 
 @import "media" // Всегда в конце

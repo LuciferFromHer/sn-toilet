@@ -19,7 +19,7 @@
 		<div class="header-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-2"><h1 class="logo"><a href="">Toilet</a></h1></div>
+					<div class="col-lg-2"><h1 class="logo"><a href="">Kabinka</a></h1></div>
 				</div>
 					<div class="main-header">
 									<div class="col-lg-4 col-md-5 col-sm-6">
@@ -37,7 +37,7 @@
 										<div class="row">
 											<div class="profile" id="profile-butt">
 												<div class="profile-name">Касапий</div>
-												<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="" class="profile-img">
+												<img src="img/211794845.jpg" alt="" class="profile-img">
 												<div class="dots">
 													<div class="dot"></div>
 													<div class="dot"></div>
@@ -58,7 +58,7 @@
 			<div class="tablet-menu" id="tablet-menu">
 					<div class="tb-profile">
 						 <a href="#">
-							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="" class="profile-img">
+							<img src="img/211794845.jpg" alt="" class="profile-img">
 							<div class="use-name">Касапий Бенедикт</div>
 							<div class="use-id">@kaysap</div>
 						 </a>

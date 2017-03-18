@@ -9,8 +9,12 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
 	/**/
+	.footer
+		display: none
+	.ms-del
+		display: none!important;
 	.friends-block
-		display: none;
+		display: none
 	.tablet-menu
 		width: 260px
 	.container
@@ -41,6 +45,23 @@
 				width: 100%
 				margin-left: 14px
 				position: fixed
+	body 
+		.dialog
+			box-shadow: none
+			height: 100%
+			position: fixed
+			.ms-list-alignment
+				height: 100%
+				padding-left: 15px
+				.ms-list
+					padding-bottom: 150px
+			.send-message-block
+				bottom: 70px
+				padding-left: 30px
+				.send-inpt
+					width: 80%
+				.send-inpt-placeholder
+					left: 40px
 	.messages
 		.m-list
 			li
@@ -50,13 +71,20 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	body 
+		.dialog
+			.send-message-block
+				.send-inpt
+					width: 70%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-	input[type="text"]
-		width: 270px
+	body 
+		.dialog
+			.send-message-block
+				.send-inpt
+					width: 65%
 
 /*==========  Mobile First  ==========*/
 
