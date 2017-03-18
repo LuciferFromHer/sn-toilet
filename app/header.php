@@ -37,7 +37,7 @@
 										<div class="row">
 											<div class="profile" id="profile-butt">
 												<div class="profile-name">Касапий</div>
-												<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="" class="profile-img">
+												<img src="img/211794845.jpg" alt="" class="profile-img">
 												<div class="dots">
 													<div class="dot"></div>
 													<div class="dot"></div>
@@ -58,7 +58,7 @@
 			<div class="tablet-menu" id="tablet-menu">
 					<div class="tb-profile">
 						 <a href="#">
-							<img src="img/maksim-gorkii-aleksei-peshkov-pisatel-portret.jpg" alt="" class="profile-img">
+							<img src="img/211794845.jpg" alt="" class="profile-img">
 							<div class="use-name">Касапий Бенедикт</div>
 							<div class="use-id">@kaysap</div>
 						 </a>
